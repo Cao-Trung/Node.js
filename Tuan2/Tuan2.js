@@ -26,7 +26,7 @@ function link(url)
 
     return new Promise(resolve => {
         setTimeout(() => {
-          resolve('resolved');
+          resolve();
         }, 2000);
       });
 }
