@@ -1,8 +1,6 @@
 var express = require('express');
 var server = express();
 
-server.use(express.static(__dirname + '/public'));
-
 server.set('views', './views/pages');
 server.set('view engine', 'ejs');
 
