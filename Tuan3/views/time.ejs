@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <Title>Time</Title>
+        <%- include('./head') %>
+    </head>
+    <body onload="Refresh()">
+        <header>
+            <%- include('./header') %>
+        </header>
+        <div id="main">
+            <h3 id="now"></h3>
+            <script>
+                var today = new Date();
+                var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                var dateTime = 'Today is: ' + date + ' ' + time;
+             
+                document.getElementById("now").innerHTML = dateTime;
+            </script>
+        </div>
+        <footer>
+            <%- include('./footer') %>
+        </footer>
+    </body>
+</html>

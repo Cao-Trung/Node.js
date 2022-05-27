@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <Title>Day</Title>
+        <%- include('./head') %>
+    </head>
+    <body>
+        <header>
+            <%- include('./header') %>
+        </header>
+        <div id="main">
+            <h3 id="now"></h3>
+            <script>
+                var today = new Date();
+                var day = today.getDay();
+                if(day == 0)
+                {
+                    document.getElementById("now").innerHTML = "Today is Sunday";
+                }
+                else if(day == 1)
+                {
+                    document.getElementById("now").innerHTML = "Today is Monday";
+                }
+                else if(day == 2)
+                {
+                    document.getElementById("now").innerHTML = "Today is Tuesday";
+                }
+                else if(day == 3)
+                {
+                    document.getElementById("now").innerHTML = "Today is Wednesday";
+                }
+                else if(day == 4)
+                {
+                    document.getElementById("now").innerHTML = "Today is Thursday";
+                }
+                else if(day == 5)
+                {
+                    document.getElementById("now").innerHTML = "Today is Friday";
+                }
+                else if(day == 6)
+                {
+                    document.getElementById("now").innerHTML = "Today is Saturday";
+                }               
+            </script>
+        </div>
+        <footer>
+            <%- include('./footer') %>
+        </footer>
+    </body>
+</html>
